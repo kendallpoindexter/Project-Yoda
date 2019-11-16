@@ -15,6 +15,7 @@
 		EBD44E7C238084BC00ACAD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */; };
 		EBD44E87238084BC00ACAD2C /* Project_YodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */; };
 		EBD44E93238085E700ACAD2C /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E92238085E700ACAD2C /* FilmModel.swift */; };
+		EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E942380868F00ACAD2C /* CharacterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_YodaTests.swift; sourceTree = "<group>"; };
 		EBD44E88238084BC00ACAD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD44E92238085E700ACAD2C /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		EBD44E942380868F00ACAD2C /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD44E92238085E700ACAD2C /* FilmModel.swift */,
+				EBD44E942380868F00ACAD2C /* CharacterModel.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */,
+				EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */,
 				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
 				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
 				EBD44E93238085E700ACAD2C /* FilmModel.swift in Sources */,
