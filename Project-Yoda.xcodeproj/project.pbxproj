@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */; };
+		EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */; };
+		EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E73238084BC00ACAD2C /* ViewController.swift */; };
+		EBD44E77238084BC00ACAD2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E75238084BC00ACAD2C /* Main.storyboard */; };
+		EBD44E79238084BC00ACAD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E78238084BC00ACAD2C /* Assets.xcassets */; };
+		EBD44E7C238084BC00ACAD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */; };
+		EBD44E87238084BC00ACAD2C /* Project_YodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBD44E83238084BC00ACAD2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBD44E64238084BB00ACAD2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBD44E6B238084BB00ACAD2C;
+			remoteInfo = "Project-Yoda";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBD44E6C238084BB00ACAD2C /* Project-Yoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Yoda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBD44E73238084BC00ACAD2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBD44E76238084BC00ACAD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBD44E78238084BC00ACAD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBD44E7B238084BC00ACAD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBD44E7D238084BC00ACAD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD44E82238084BC00ACAD2C /* Project-YodaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project-YodaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_YodaTests.swift; sourceTree = "<group>"; };
+		EBD44E88238084BC00ACAD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBD44E69238084BB00ACAD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD44E7F238084BC00ACAD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBD44E63238084BB00ACAD2C = {
+			isa = PBXGroup;
+			children = (
+				EBD44E6E238084BB00ACAD2C /* Project-Yoda */,
+				EBD44E85238084BC00ACAD2C /* Project-YodaTests */,
+				EBD44E6D238084BB00ACAD2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD44E6D238084BB00ACAD2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E6C238084BB00ACAD2C /* Project-Yoda.app */,
+				EBD44E82238084BC00ACAD2C /* Project-YodaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBD44E6E238084BB00ACAD2C /* Project-Yoda */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */,
+				EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */,
+				EBD44E73238084BC00ACAD2C /* ViewController.swift */,
+				EBD44E75238084BC00ACAD2C /* Main.storyboard */,
+				EBD44E78238084BC00ACAD2C /* Assets.xcassets */,
+				EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */,
+				EBD44E7D238084BC00ACAD2C /* Info.plist */,
+			);
+			path = "Project-Yoda";
+			sourceTree = "<group>";
+		};
+		EBD44E85238084BC00ACAD2C /* Project-YodaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */,
+				EBD44E88238084BC00ACAD2C /* Info.plist */,
+			);
+			path = "Project-YodaTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBD44E6B238084BB00ACAD2C /* Project-Yoda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD44E8B238084BC00ACAD2C /* Build configuration list for PBXNativeTarget "Project-Yoda" */;
+			buildPhases = (
+				EBD44E68238084BB00ACAD2C /* Sources */,
+				EBD44E69238084BB00ACAD2C /* Frameworks */,
+				EBD44E6A238084BB00ACAD2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project-Yoda";
+			productName = "Project-Yoda";
+			productReference = EBD44E6C238084BB00ACAD2C /* Project-Yoda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBD44E81238084BC00ACAD2C /* Project-YodaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD44E8E238084BC00ACAD2C /* Build configuration list for PBXNativeTarget "Project-YodaTests" */;
+			buildPhases = (
+				EBD44E7E238084BC00ACAD2C /* Sources */,
+				EBD44E7F238084BC00ACAD2C /* Frameworks */,
+				EBD44E80238084BC00ACAD2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD44E84238084BC00ACAD2C /* PBXTargetDependency */,
+			);
+			name = "Project-YodaTests";
+			productName = "Project-YodaTests";
+			productReference = EBD44E82238084BC00ACAD2C /* Project-YodaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBD44E64238084BB00ACAD2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Kendall Poindexter";
+				TargetAttributes = {
+					EBD44E6B238084BB00ACAD2C = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					EBD44E81238084BC00ACAD2C = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = EBD44E6B238084BB00ACAD2C;
+					};
+				};
+			};
+			buildConfigurationList = EBD44E67238084BB00ACAD2C /* Build configuration list for PBXProject "Project-Yoda" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBD44E63238084BB00ACAD2C;
+			productRefGroup = EBD44E6D238084BB00ACAD2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBD44E6B238084BB00ACAD2C /* Project-Yoda */,
+				EBD44E81238084BC00ACAD2C /* Project-YodaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBD44E6A238084BB00ACAD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD44E7C238084BC00ACAD2C /* LaunchScreen.storyboard in Resources */,
+				EBD44E79238084BC00ACAD2C /* Assets.xcassets in Resources */,
+				EBD44E77238084BC00ACAD2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD44E80238084BC00ACAD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBD44E68238084BB00ACAD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */,
+				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
+				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD44E7E238084BC00ACAD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD44E87238084BC00ACAD2C /* Project_YodaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBD44E84238084BC00ACAD2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBD44E6B238084BB00ACAD2C /* Project-Yoda */;
+			targetProxy = EBD44E83238084BC00ACAD2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBD44E75238084BC00ACAD2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD44E76238084BC00ACAD2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD44E7B238084BC00ACAD2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBD44E89238084BC00ACAD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBD44E8A238084BC00ACAD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBD44E8C238084BC00ACAD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PVZB9UKB4;
+				INFOPLIST_FILE = "Project-Yoda/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kcp.Project-Yoda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBD44E8D238084BC00ACAD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PVZB9UKB4;
+				INFOPLIST_FILE = "Project-Yoda/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kcp.Project-Yoda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBD44E8F238084BC00ACAD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PVZB9UKB4;
+				INFOPLIST_FILE = "Project-YodaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kcp.Project-YodaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project-Yoda.app/Project-Yoda";
+			};
+			name = Debug;
+		};
+		EBD44E90238084BC00ACAD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9PVZB9UKB4;
+				INFOPLIST_FILE = "Project-YodaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kcp.Project-YodaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project-Yoda.app/Project-Yoda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBD44E67238084BB00ACAD2C /* Build configuration list for PBXProject "Project-Yoda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD44E89238084BC00ACAD2C /* Debug */,
+				EBD44E8A238084BC00ACAD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD44E8B238084BC00ACAD2C /* Build configuration list for PBXNativeTarget "Project-Yoda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD44E8C238084BC00ACAD2C /* Debug */,
+				EBD44E8D238084BC00ACAD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD44E8E238084BC00ACAD2C /* Build configuration list for PBXNativeTarget "Project-YodaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD44E8F238084BC00ACAD2C /* Debug */,
+				EBD44E90238084BC00ACAD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBD44E64238084BB00ACAD2C /* Project object */;
+}
