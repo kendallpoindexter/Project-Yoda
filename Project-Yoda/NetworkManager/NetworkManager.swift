@@ -42,7 +42,7 @@ struct NetworkManager {
         }
     }
 
-    func fetchCharacter(with urlString: String) -> Promise<SWCharacter> {
+  private func fetchCharacter(with urlString: String) -> Promise<SWCharacter> {
         return Promise { seal in
             firstly{
                 fetchObjectFromData(with: urlString, type: APICharacter.self)
@@ -59,7 +59,7 @@ struct NetworkManager {
         }
     }
 
-    func fetchSpecies(with urlStrings: [String]) -> Promise<[Species]> {
+   private func fetchSpecies(with urlStrings: [String]) -> Promise<[Species]> {
         return Promise { seal in
             let speciesPromises = urlStrings.map {
                 fetchObjectFromData(with: $0, type: Species.self)
@@ -74,7 +74,7 @@ struct NetworkManager {
         }
     }
 
-    func fetchPlanet(with urlString: String) -> Promise<Planet> {
+   private func fetchPlanet(with urlString: String) -> Promise<Planet> {
         return Promise { seal in
             firstly {
                 fetchObjectFromData(with: urlString, type: Planet.self)
@@ -86,7 +86,7 @@ struct NetworkManager {
         }
     }
 
-    func fetchObjectFromData<T: Decodable>(with urlString: String, type: T.Type) -> Promise<T> {
+   private func fetchObjectFromData<T: Decodable>(with urlString: String, type: T.Type) -> Promise<T> {
         let url = URL(string: urlString)
         let session = URLSession(configuration: .default)
         return Promise { seal in
@@ -103,7 +103,7 @@ struct NetworkManager {
         }
     }
     
-    func parseData<T: Decodable>(with data: Data, type: T.Type) -> T? {
+    private func parseData<T: Decodable>(with data: Data, type: T.Type) -> T? {
         do {
             let decoder = JSONDecoder()
             let decodedData = try decoder.decode(type, from: data)
