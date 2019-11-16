@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct APIcharacter: Decodable {
+struct APICharacter: Decodable {
     let name: String
     let gender: String
     let homeworld: String
     let species: [String]
 }
 
-extension APIcharacter {
+extension APICharacter {
     enum CharacterCodingKeys: String, CodingKey {
         case name
         case gender
