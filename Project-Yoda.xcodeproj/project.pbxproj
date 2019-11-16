@@ -14,6 +14,7 @@
 		EBD44E79238084BC00ACAD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E78238084BC00ACAD2C /* Assets.xcassets */; };
 		EBD44E7C238084BC00ACAD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */; };
 		EBD44E87238084BC00ACAD2C /* Project_YodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */; };
+		EBD44E93238085E700ACAD2C /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E92238085E700ACAD2C /* FilmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		EBD44E82238084BC00ACAD2C /* Project-YodaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project-YodaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_YodaTests.swift; sourceTree = "<group>"; };
 		EBD44E88238084BC00ACAD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD44E92238085E700ACAD2C /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		EBD44E6E238084BB00ACAD2C /* Project-Yoda */ = {
 			isa = PBXGroup;
 			children = (
+				EBD44E91238085C400ACAD2C /* APIModels */,
 				EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */,
 				EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */,
 				EBD44E73238084BC00ACAD2C /* ViewController.swift */,
@@ -97,6 +100,14 @@
 				EBD44E88238084BC00ACAD2C /* Info.plist */,
 			);
 			path = "Project-YodaTests";
+			sourceTree = "<group>";
+		};
+		EBD44E91238085C400ACAD2C /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E92238085E700ACAD2C /* FilmModel.swift */,
+			);
+			path = APIModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */,
 				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
 				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
+				EBD44E93238085E700ACAD2C /* FilmModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
