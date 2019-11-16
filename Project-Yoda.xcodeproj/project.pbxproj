@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B863AFB1AA44E5524A7C4D /* Pods_Project_Yoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB8CF8E36DC332B263CF9B5 /* Pods_Project_Yoda.framework */; };
+		32BA77599ED255BC4ECEE482 /* Pods_Project_YodaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B706E16032882E266762746E /* Pods_Project_YodaTests.framework */; };
 		EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */; };
 		EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */; };
 		EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E73238084BC00ACAD2C /* ViewController.swift */; };
@@ -33,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A72DCAFEEB4C7836E5505DB /* Pods-Project-Yoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-Yoda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project-Yoda/Pods-Project-Yoda.release.xcconfig"; sourceTree = "<group>"; };
+		ACB8CF8E36DC332B263CF9B5 /* Pods_Project_Yoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Yoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B706E16032882E266762746E /* Pods_Project_YodaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_YodaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2278031897BF6087DF921F1 /* Pods-Project-Yoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-Yoda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project-Yoda/Pods-Project-Yoda.debug.xcconfig"; sourceTree = "<group>"; };
+		DCCBB31F50311B4F03F561CB /* Pods-Project-YodaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-YodaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project-YodaTests/Pods-Project-YodaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2FE51F61ED6403DEBF13373 /* Pods-Project-YodaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-YodaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project-YodaTests/Pods-Project-YodaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBD44E6C238084BB00ACAD2C /* Project-Yoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Yoda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B863AFB1AA44E5524A7C4D /* Pods_Project_Yoda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,18 +73,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BA77599ED255BC4ECEE482 /* Pods_Project_YodaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E7A6F56DECCF2422A743423 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2278031897BF6087DF921F1 /* Pods-Project-Yoda.debug.xcconfig */,
+				9A72DCAFEEB4C7836E5505DB /* Pods-Project-Yoda.release.xcconfig */,
+				E2FE51F61ED6403DEBF13373 /* Pods-Project-YodaTests.debug.xcconfig */,
+				DCCBB31F50311B4F03F561CB /* Pods-Project-YodaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A22C612786F034FCA96CC68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB8CF8E36DC332B263CF9B5 /* Pods_Project_Yoda.framework */,
+				B706E16032882E266762746E /* Pods_Project_YodaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBD44E63238084BB00ACAD2C = {
 			isa = PBXGroup;
 			children = (
 				EBD44E6E238084BB00ACAD2C /* Project-Yoda */,
 				EBD44E85238084BC00ACAD2C /* Project-YodaTests */,
 				EBD44E6D238084BB00ACAD2C /* Products */,
+				1E7A6F56DECCF2422A743423 /* Pods */,
+				4A22C612786F034FCA96CC68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBD44E8B238084BC00ACAD2C /* Build configuration list for PBXNativeTarget "Project-Yoda" */;
 			buildPhases = (
+				EECF4CDF68769DA5195333BF /* [CP] Check Pods Manifest.lock */,
 				EBD44E68238084BB00ACAD2C /* Sources */,
 				EBD44E69238084BB00ACAD2C /* Frameworks */,
 				EBD44E6A238084BB00ACAD2C /* Resources */,
+				2BD756C65B901D742537178F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBD44E8E238084BC00ACAD2C /* Build configuration list for PBXNativeTarget "Project-YodaTests" */;
 			buildPhases = (
+				8FA7259DCDADC877F04EB876 /* [CP] Check Pods Manifest.lock */,
 				EBD44E7E238084BC00ACAD2C /* Sources */,
 				EBD44E7F238084BC00ACAD2C /* Frameworks */,
 				EBD44E80238084BC00ACAD2C /* Resources */,
@@ -228,6 +263,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BD756C65B901D742537178F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Project-Yoda/Pods-Project-Yoda-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project-Yoda/Pods-Project-Yoda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA7259DCDADC877F04EB876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project-YodaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECF4CDF68769DA5195333BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project-Yoda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBD44E68238084BB00ACAD2C /* Sources */ = {
@@ -400,6 +504,7 @@
 		};
 		EBD44E8C238084BC00ACAD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2278031897BF6087DF921F1 /* Pods-Project-Yoda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,6 +523,7 @@
 		};
 		EBD44E8D238084BC00ACAD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A72DCAFEEB4C7836E5505DB /* Pods-Project-Yoda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +542,7 @@
 		};
 		EBD44E8F238084BC00ACAD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FE51F61ED6403DEBF13373 /* Pods-Project-YodaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +565,7 @@
 		};
 		EBD44E90238084BC00ACAD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCCBB31F50311B4F03F561CB /* Pods-Project-YodaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
