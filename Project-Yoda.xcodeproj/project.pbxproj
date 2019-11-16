@@ -19,6 +19,7 @@
 		EBD44E972380873800ACAD2C /* SpeciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E962380873800ACAD2C /* SpeciesModel.swift */; };
 		EBD44E99238087AB00ACAD2C /* PlanetModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E98238087AB00ACAD2C /* PlanetModal.swift */; };
 		EBD44E9C2380888A00ACAD2C /* StarWarsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */; };
+		EBD44E9E238088C200ACAD2C /* StarWarsFilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		EBD44E962380873800ACAD2C /* SpeciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesModel.swift; sourceTree = "<group>"; };
 		EBD44E98238087AB00ACAD2C /* PlanetModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModal.swift; sourceTree = "<group>"; };
 		EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacterModel.swift; sourceTree = "<group>"; };
+		EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsFilmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */,
+				EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */,
 			);
 			path = StarWarsModel;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */,
 				EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */,
+				EBD44E9E238088C200ACAD2C /* StarWarsFilmModel.swift in Sources */,
 				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
 				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
 				EBD44E9C2380888A00ACAD2C /* StarWarsCharacterModel.swift in Sources */,
