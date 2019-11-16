@@ -14,6 +14,12 @@
 		EBD44E79238084BC00ACAD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E78238084BC00ACAD2C /* Assets.xcassets */; };
 		EBD44E7C238084BC00ACAD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */; };
 		EBD44E87238084BC00ACAD2C /* Project_YodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */; };
+		EBD44E93238085E700ACAD2C /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E92238085E700ACAD2C /* FilmModel.swift */; };
+		EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E942380868F00ACAD2C /* CharacterModel.swift */; };
+		EBD44E972380873800ACAD2C /* SpeciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E962380873800ACAD2C /* SpeciesModel.swift */; };
+		EBD44E99238087AB00ACAD2C /* PlanetModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E98238087AB00ACAD2C /* PlanetModal.swift */; };
+		EBD44E9C2380888A00ACAD2C /* StarWarsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */; };
+		EBD44E9E238088C200ACAD2C /* StarWarsFilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		EBD44E82238084BC00ACAD2C /* Project-YodaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project-YodaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD44E86238084BC00ACAD2C /* Project_YodaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_YodaTests.swift; sourceTree = "<group>"; };
 		EBD44E88238084BC00ACAD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD44E92238085E700ACAD2C /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		EBD44E942380868F00ACAD2C /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		EBD44E962380873800ACAD2C /* SpeciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesModel.swift; sourceTree = "<group>"; };
+		EBD44E98238087AB00ACAD2C /* PlanetModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModal.swift; sourceTree = "<group>"; };
+		EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacterModel.swift; sourceTree = "<group>"; };
+		EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsFilmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,8 @@
 		EBD44E6E238084BB00ACAD2C /* Project-Yoda */ = {
 			isa = PBXGroup;
 			children = (
+				EBD44E9A2380881600ACAD2C /* StarWarsModel */,
+				EBD44E91238085C400ACAD2C /* APIModels */,
 				EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */,
 				EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */,
 				EBD44E73238084BC00ACAD2C /* ViewController.swift */,
@@ -97,6 +111,26 @@
 				EBD44E88238084BC00ACAD2C /* Info.plist */,
 			);
 			path = "Project-YodaTests";
+			sourceTree = "<group>";
+		};
+		EBD44E91238085C400ACAD2C /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E92238085E700ACAD2C /* FilmModel.swift */,
+				EBD44E942380868F00ACAD2C /* CharacterModel.swift */,
+				EBD44E962380873800ACAD2C /* SpeciesModel.swift */,
+				EBD44E98238087AB00ACAD2C /* PlanetModal.swift */,
+			);
+			path = APIModels;
+			sourceTree = "<group>";
+		};
+		EBD44E9A2380881600ACAD2C /* StarWarsModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */,
+				EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */,
+			);
+			path = StarWarsModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */,
+				EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */,
+				EBD44E9E238088C200ACAD2C /* StarWarsFilmModel.swift in Sources */,
 				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
 				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
+				EBD44E9C2380888A00ACAD2C /* StarWarsCharacterModel.swift in Sources */,
+				EBD44E972380873800ACAD2C /* SpeciesModel.swift in Sources */,
+				EBD44E93238085E700ACAD2C /* FilmModel.swift in Sources */,
+				EBD44E99238087AB00ACAD2C /* PlanetModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
