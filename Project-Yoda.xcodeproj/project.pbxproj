@@ -22,6 +22,7 @@
 		EBD44E99238087AB00ACAD2C /* PlanetModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E98238087AB00ACAD2C /* PlanetModal.swift */; };
 		EBD44E9C2380888A00ACAD2C /* StarWarsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */; };
 		EBD44E9E238088C200ACAD2C /* StarWarsFilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */; };
+		EBD44EA123808EB300ACAD2C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44EA023808EB300ACAD2C /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EBD44E98238087AB00ACAD2C /* PlanetModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModal.swift; sourceTree = "<group>"; };
 		EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacterModel.swift; sourceTree = "<group>"; };
 		EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsFilmModel.swift; sourceTree = "<group>"; };
+		EBD44EA023808EB300ACAD2C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		EBD44E6E238084BB00ACAD2C /* Project-Yoda */ = {
 			isa = PBXGroup;
 			children = (
+				EBD44E9F23808E9400ACAD2C /* NetworkManager */,
 				EBD44E9A2380881600ACAD2C /* StarWarsModel */,
 				EBD44E91238085C400ACAD2C /* APIModels */,
 				EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */,
@@ -163,6 +166,14 @@
 				EBD44E9D238088C200ACAD2C /* StarWarsFilmModel.swift */,
 			);
 			path = StarWarsModel;
+			sourceTree = "<group>";
+		};
+		EBD44E9F23808E9400ACAD2C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44EA023808EB300ACAD2C /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +351,7 @@
 			files = (
 				EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */,
 				EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */,
+				EBD44EA123808EB300ACAD2C /* NetworkManager.swift in Sources */,
 				EBD44E9E238088C200ACAD2C /* StarWarsFilmModel.swift in Sources */,
 				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
 				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
