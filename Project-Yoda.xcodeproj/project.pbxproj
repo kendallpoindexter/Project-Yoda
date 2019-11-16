@@ -18,6 +18,7 @@
 		EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E942380868F00ACAD2C /* CharacterModel.swift */; };
 		EBD44E972380873800ACAD2C /* SpeciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E962380873800ACAD2C /* SpeciesModel.swift */; };
 		EBD44E99238087AB00ACAD2C /* PlanetModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E98238087AB00ACAD2C /* PlanetModal.swift */; };
+		EBD44E9C2380888A00ACAD2C /* StarWarsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		EBD44E942380868F00ACAD2C /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		EBD44E962380873800ACAD2C /* SpeciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesModel.swift; sourceTree = "<group>"; };
 		EBD44E98238087AB00ACAD2C /* PlanetModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModal.swift; sourceTree = "<group>"; };
+		EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		EBD44E6E238084BB00ACAD2C /* Project-Yoda */ = {
 			isa = PBXGroup;
 			children = (
+				EBD44E9A2380881600ACAD2C /* StarWarsModel */,
 				EBD44E91238085C400ACAD2C /* APIModels */,
 				EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */,
 				EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */,
@@ -117,6 +120,14 @@
 				EBD44E98238087AB00ACAD2C /* PlanetModal.swift */,
 			);
 			path = APIModels;
+			sourceTree = "<group>";
+		};
+		EBD44E9A2380881600ACAD2C /* StarWarsModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E9B2380888A00ACAD2C /* StarWarsCharacterModel.swift */,
+			);
+			path = StarWarsModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 				EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */,
 				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
 				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
+				EBD44E9C2380888A00ACAD2C /* StarWarsCharacterModel.swift in Sources */,
 				EBD44E972380873800ACAD2C /* SpeciesModel.swift in Sources */,
 				EBD44E93238085E700ACAD2C /* FilmModel.swift in Sources */,
 				EBD44E99238087AB00ACAD2C /* PlanetModal.swift in Sources */,
