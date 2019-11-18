@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        CharacterService().getCharacters(with: 2) { (result) in
+            switch result {
+            case .success(let swCharacters):
+                print(swCharacters)
+            case .failure(let error):
+                print(error)
+            }
+        }
         // Do any additional setup after loading the view.
     }
 
