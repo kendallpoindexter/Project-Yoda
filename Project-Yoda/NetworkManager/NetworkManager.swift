@@ -11,29 +11,14 @@ import PromiseKit
 
 struct NetworkManager {
 
-    func fetchFilm( with id: Int) -> Promise<Film> {
-        let filmURLString = "https://swapi.co/api/films/\(id)/"
+
+
+    func fetchCharacters(with pageNumber: Int) -> Promise<APICharacters> {
+        let urlString = "https://swapi.co/api/people/?page=\(pageNumber)"
 
         return Promise { seal in
             firstly {
-                fetchObjectFromData(with: filmURLString, type: Film.self)
-            }.done { film in
-                seal.fulfill(film)
-            }.catch { error in
-                seal.reject(error)
-            }
-
-        }
-    }
-
-    func fetchCharacters(with urlStrings: [String]) -> Promise<[SWCharacter]> {
-        let characterPromises = urlStrings.map {
-            fetchCharacter(with: $0)
-        }
-
-        return Promise { seal in
-            firstly{
-                when(fulfilled: characterPromises)
+                fetchObjectFromData(with: urlString, type: APICharacters.self)
             }.done { characters in
                 seal.fulfill(characters)
             }.catch { error in
@@ -42,20 +27,98 @@ struct NetworkManager {
         }
     }
 
-  private func fetchCharacter(with urlString: String) -> Promise<SWCharacter> {
+    func fetchSWCharacters( with characters: [APICharacter]) -> Promise<[SWCharacter]> {
+        let swCharacterPromises = characters.map {
+            fetchSWCharacter(with: $0)
+        }
+
         return Promise { seal in
-            firstly{
-                fetchObjectFromData(with: urlString, type: APICharacter.self)
-            }.then { character in
-                self.fetchSpecies(with: character.species).map {(character, $0)}
-            }.then { character, species in
-                self.fetchPlanet(with: character.homeworld ).map {(character, species, $0)}
-            }.done { character, species, planet in
-                let swCharacter = SWCharacter(name: character.name, gender: character.gender, homeworld: planet.name, species: species)
+            firstly {
+                when(fulfilled: swCharacterPromises)
+            }.done { swCharacters in
+                seal.fulfill(swCharacters)
+            }.catch { error in
+                seal.reject(error)
+            }
+        }
+
+    }
+
+   private func fetchSWCharacter( with character: APICharacter) -> Promise<SWCharacter> {
+        return Promise { seal in
+            firstly {
+                fetchPlanet(with: character.homeworld)
+            }.then { planet in
+                self.fetchFilms(with: character.films).map{(planet, $0)}
+            }.then { planet, films in
+                self.fetchSpecies(with: character.species).map {(planet, films, $0)}
+            }.done { planet, films, species in
+                let swCharacter = SWCharacter(name: character.name, gender: character.gender, homeworld: planet.name, films: films, species: species)
                 seal.fulfill(swCharacter)
             }.catch { error in
                 seal.reject(error)
             }
+
+        }
+    }
+
+//    func fetchCharacters(with urlStrings: [String]) -> Promise<[SWCharacter]> {
+//        let characterPromises = urlStrings.map {
+//            fetchCharacter(with: $0)
+//        }
+//
+//        return Promise { seal in
+//            firstly{
+//                when(fulfilled: characterPromises)
+//            }.done { characters in
+//                seal.fulfill(characters)
+//            }.catch { error in
+//                seal.reject(error)
+//            }
+//        }
+//    }
+
+//  private func fetchCharacter(with urlString: String) -> Promise<SWCharacter> {
+//        return Promise { seal in
+//            firstly{
+//                fetchObjectFromData(with: urlString, type: APICharacter.self)
+//            }.then { character in
+//                self.fetchSpecies(with: character.species).map {(character, $0)}
+//            }.then { character, species in
+//                self.fetchPlanet(with: character.homeworld ).map {(character, species, $0)}
+//            }.done { character, species, planet in
+//                let swCharacter = SWCharacter(name: character.name, gender: character.gender, homeworld: planet.name, species: species)
+//                seal.fulfill(swCharacter)
+//            }.catch { error in
+//                seal.reject(error)
+//            }
+//        }
+//    }
+    private func fetchPlanet(with urlString: String) -> Promise<Planet> {
+        return Promise { seal in
+            firstly {
+                fetchObjectFromData(with: urlString, type: Planet.self)
+            }.done { planet in
+                seal.fulfill(planet)
+            }.catch { error in
+                seal.reject(error)
+            }
+        }
+    }
+
+   private func fetchFilms( with urlString: [String]) -> Promise<[Film]> {
+        let filmPromises = urlString.map {
+            fetchObjectFromData(with: $0, type: Film.self)
+        }
+        return Promise { seal in
+            firstly {
+                when(fulfilled: filmPromises)
+            }.done { films in
+                seal.fulfill(films)
+            }.catch { error in
+                seal.reject(error)
+            }
+
         }
     }
 
@@ -74,17 +137,6 @@ struct NetworkManager {
         }
     }
 
-   private func fetchPlanet(with urlString: String) -> Promise<Planet> {
-        return Promise { seal in
-            firstly {
-                fetchObjectFromData(with: urlString, type: Planet.self)
-            }.done { planet in
-                seal.fulfill(planet)
-            }.catch { error in
-                seal.reject(error)
-            }
-        }
-    }
 
    private func fetchObjectFromData<T: Decodable>(with urlString: String, type: T.Type) -> Promise<T> {
         let url = URL(string: urlString)

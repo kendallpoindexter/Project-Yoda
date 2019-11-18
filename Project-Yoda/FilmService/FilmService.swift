@@ -9,19 +9,22 @@
 import Foundation
 import PromiseKit
 
-struct FilmService {
+struct CharacterService {
 
-    func getFilm( with id: Int, completion: @escaping (Swift.Result<SWFilm, Error>) -> Void) {
+    func getCharacters(with pageNumber: Int, completion: @escaping (Swift.Result<SWCharacters,Error>) -> Void) {
         firstly {
-            NetworkManager().fetchFilm(with: id)
-        }.then { film in
-            NetworkManager().fetchCharacters(with: film.characterURLStrings).map { (film, $0) }
-        }.done { film, characters in
-            let swFilm = SWFilm(title: film.title, episodeID: film.episodeID, characters: characters)
-            completion(.success(swFilm))
+            NetworkManager().fetchCharacters(with: pageNumber)
+        }.then { apiCharacters in
+            NetworkManager().fetchSWCharacters(with: apiCharacters.results)
+        }.done { swCharacters in
+            let swCharacters = SWCharacters(characters: swCharacters)
+            completion(.success(swCharacters))
         }.catch { error in
             completion(.failure(error))
         }
+
     }
 
 }
+
+

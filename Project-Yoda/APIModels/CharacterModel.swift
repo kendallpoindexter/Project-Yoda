@@ -8,10 +8,17 @@
 
 import Foundation
 
+struct APICharacters: Decodable {
+    let next: String?
+    let previous: String?
+    let results: [APICharacter]
+}
+
 struct APICharacter: Decodable {
     let name: String
     let gender: String
     let homeworld: String
+    let films: [String]
     let species: [String]
 }
 
@@ -20,6 +27,7 @@ extension APICharacter {
         case name
         case gender
         case homeworld
+        case films
         case species
     }
 }

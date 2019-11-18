@@ -8,16 +8,26 @@
 
 import Foundation
 
+class SWCharacters {
+    var characters: [SWCharacter]
+
+    init(characters: [SWCharacter]) {
+        self.characters = characters
+    }
+}
+
 class SWCharacter {
     var name: String
     var gender: String
     var homeworld: String
+    var films: [Film]
     var species: [Species]
 
-    init(name: String, gender: String, homeworld: String, species: [Species]) {
+    init(name: String, gender: String, homeworld: String, films: [Film], species: [Species]) {
         self.name = name
         self.gender = gender
         self.homeworld = homeworld
+        self.films = films
         self.species = species
     }
 }
