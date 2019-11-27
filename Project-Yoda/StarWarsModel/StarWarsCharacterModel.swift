@@ -8,13 +8,15 @@
 
 import Foundation
 
-class SWCharacters {
-    var characters: [SWCharacter]
-
-    init(characters: [SWCharacter]) {
-        self.characters = characters
-    }
-}
+//class SWCharacters {
+//    var characters: [SWCharacter]
+//    var totalCharacterCount: Int
+//
+//    init(characters: [SWCharacter], totalCharacterCount: Int) {
+//        self.characters = characters
+//        self.totalCharacterCount = totalCharacterCount
+//    }
+//}
 
 class SWCharacter {
     var name: String

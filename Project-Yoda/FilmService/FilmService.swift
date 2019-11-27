@@ -11,14 +11,13 @@ import PromiseKit
 
 struct CharacterService {
 
-    func getCharacters(with pageNumber: Int, completion: @escaping (Swift.Result<SWCharacters,Error>) -> Void) {
+    func getCharacters(with pageNumber: Int, completion: @escaping (Swift.Result<([SWCharacter],Int),Error>) -> Void) {
         firstly {
             NetworkManager().fetchCharacters(with: pageNumber)
-        }.then { apiCharacters in
-            NetworkManager().fetchSWCharacters(with: apiCharacters.results)
-        }.done { swCharacters in
-            let swCharacters = SWCharacters(characters: swCharacters)
-            completion(.success(swCharacters))
+        }.then { response in
+            NetworkManager().fetchSWCharacters(with: response.results).map {($0, response.count)}
+        }.done { swCharacters, characterCount in
+            completion(.success((swCharacters, characterCount)))
         }.catch { error in
             completion(.failure(error))
         }

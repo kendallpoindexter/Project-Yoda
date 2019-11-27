@@ -11,14 +11,12 @@ import PromiseKit
 
 struct NetworkManager {
 
-
-
-    func fetchCharacters(with pageNumber: Int) -> Promise<APICharacters> {
+    func fetchCharacters(with pageNumber: Int) -> Promise<APICharactersResponse> {
         let urlString = "https://swapi.co/api/people/?page=\(pageNumber)"
 
         return Promise { seal in
             firstly {
-                fetchObjectFromData(with: urlString, type: APICharacters.self)
+                fetchObjectFromData(with: urlString, type: APICharactersResponse.self)
             }.done { characters in
                 seal.fulfill(characters)
             }.catch { error in
@@ -62,38 +60,6 @@ struct NetworkManager {
         }
     }
 
-//    func fetchCharacters(with urlStrings: [String]) -> Promise<[SWCharacter]> {
-//        let characterPromises = urlStrings.map {
-//            fetchCharacter(with: $0)
-//        }
-//
-//        return Promise { seal in
-//            firstly{
-//                when(fulfilled: characterPromises)
-//            }.done { characters in
-//                seal.fulfill(characters)
-//            }.catch { error in
-//                seal.reject(error)
-//            }
-//        }
-//    }
-
-//  private func fetchCharacter(with urlString: String) -> Promise<SWCharacter> {
-//        return Promise { seal in
-//            firstly{
-//                fetchObjectFromData(with: urlString, type: APICharacter.self)
-//            }.then { character in
-//                self.fetchSpecies(with: character.species).map {(character, $0)}
-//            }.then { character, species in
-//                self.fetchPlanet(with: character.homeworld ).map {(character, species, $0)}
-//            }.done { character, species, planet in
-//                let swCharacter = SWCharacter(name: character.name, gender: character.gender, homeworld: planet.name, species: species)
-//                seal.fulfill(swCharacter)
-//            }.catch { error in
-//                seal.reject(error)
-//            }
-//        }
-//    }
     private func fetchPlanet(with urlString: String) -> Promise<Planet> {
         return Promise { seal in
             firstly {
@@ -136,7 +102,6 @@ struct NetworkManager {
             }
         }
     }
-
 
    private func fetchObjectFromData<T: Decodable>(with urlString: String, type: T.Type) -> Promise<T> {
         let url = URL(string: urlString)

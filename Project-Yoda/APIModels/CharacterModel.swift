@@ -8,9 +8,8 @@
 
 import Foundation
 
-struct APICharacters: Decodable {
-    let next: String?
-    let previous: String?
+struct APICharactersResponse: Decodable {
+    let count: Int
     let results: [APICharacter]
 }
 
