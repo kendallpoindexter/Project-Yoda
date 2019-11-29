@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		13B863AFB1AA44E5524A7C4D /* Pods_Project_Yoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB8CF8E36DC332B263CF9B5 /* Pods_Project_Yoda.framework */; };
 		32BA77599ED255BC4ECEE482 /* Pods_Project_YodaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B706E16032882E266762746E /* Pods_Project_YodaTests.framework */; };
+		EB95451023831BC6006D9544 /* HomeTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95450F23831BC6006D9544 /* HomeTableViewModel.swift */; };
 		EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */; };
 		EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */; };
-		EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E73238084BC00ACAD2C /* ViewController.swift */; };
+		EBD44E74238084BC00ACAD2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD44E73238084BC00ACAD2C /* HomeTableViewController.swift */; };
 		EBD44E77238084BC00ACAD2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E75238084BC00ACAD2C /* Main.storyboard */; };
 		EBD44E79238084BC00ACAD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E78238084BC00ACAD2C /* Assets.xcassets */; };
 		EBD44E7C238084BC00ACAD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */; };
@@ -42,10 +43,11 @@
 		C2278031897BF6087DF921F1 /* Pods-Project-Yoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-Yoda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project-Yoda/Pods-Project-Yoda.debug.xcconfig"; sourceTree = "<group>"; };
 		DCCBB31F50311B4F03F561CB /* Pods-Project-YodaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-YodaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project-YodaTests/Pods-Project-YodaTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2FE51F61ED6403DEBF13373 /* Pods-Project-YodaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-YodaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project-YodaTests/Pods-Project-YodaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB95450F23831BC6006D9544 /* HomeTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewModel.swift; sourceTree = "<group>"; };
 		EBD44E6C238084BB00ACAD2C /* Project-Yoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Yoda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBD44E73238084BC00ACAD2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBD44E73238084BC00ACAD2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		EBD44E76238084BC00ACAD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD44E78238084BC00ACAD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD44E7B238084BC00ACAD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB95450D23831B38006D9544 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBD44E73238084BC00ACAD2C /* HomeTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB95450E23831BA5006D9544 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB95450F23831BC6006D9544 /* HomeTableViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		EBD44E63238084BB00ACAD2C = {
 			isa = PBXGroup;
 			children = (
@@ -125,13 +143,14 @@
 		EBD44E6E238084BB00ACAD2C /* Project-Yoda */ = {
 			isa = PBXGroup;
 			children = (
+				EB95450E23831BA5006D9544 /* ViewModels */,
+				EB95450D23831B38006D9544 /* Views */,
 				EBD44EA22380A10C00ACAD2C /* FilmService */,
 				EBD44E9F23808E9400ACAD2C /* NetworkManager */,
 				EBD44E9A2380881600ACAD2C /* StarWarsModel */,
 				EBD44E91238085C400ACAD2C /* APIModels */,
 				EBD44E6F238084BC00ACAD2C /* AppDelegate.swift */,
 				EBD44E71238084BC00ACAD2C /* SceneDelegate.swift */,
-				EBD44E73238084BC00ACAD2C /* ViewController.swift */,
 				EBD44E75238084BC00ACAD2C /* Main.storyboard */,
 				EBD44E78238084BC00ACAD2C /* Assets.xcassets */,
 				EBD44E7A238084BC00ACAD2C /* LaunchScreen.storyboard */,
@@ -357,8 +376,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD44E74238084BC00ACAD2C /* ViewController.swift in Sources */,
+				EBD44E74238084BC00ACAD2C /* HomeTableViewController.swift in Sources */,
 				EBD44E952380868F00ACAD2C /* CharacterModel.swift in Sources */,
+				EB95451023831BC6006D9544 /* HomeTableViewModel.swift in Sources */,
 				EBD44EA123808EB300ACAD2C /* NetworkManager.swift in Sources */,
 				EBD44E70238084BC00ACAD2C /* AppDelegate.swift in Sources */,
 				EBD44E72238084BC00ACAD2C /* SceneDelegate.swift in Sources */,
